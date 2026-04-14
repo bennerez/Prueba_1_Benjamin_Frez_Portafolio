@@ -1,0 +1,107 @@
+/* 1. VARIABLES Y RESETEO */
+:root {
+    --color-fondo-azul: #772121; 
+    --color-naranja: #ffa200;    
+    --color-blanco: #ffffff;
+    --color-texto-claro: #e2e8f0;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.fondo-azul {
+    background-color: var(--color-fondo-azul);
+    color: var(--color-blanco);
+    padding-bottom: 60px; 
+}
+
+.header {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px 50px; 
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+}
+
+.logo-box {
+    background-color: var(--color-naranja);
+    color: var(--color-blanco);
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 10px 12px;
+    border-radius: 6px;
+}
+
+.logo-name {
+    font-size: 1.3rem;
+}
+
+.navbar ul {
+    display: flex; 
+    list-style: none; 
+    gap: 30px; 
+}
+
+.navbar a {
+    color: var(--color-blanco);
+    text-decoration: none; 
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: var(--color-naranja); 
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 10%; 
+}
+
+.hero-texto {
+    max-width: 60%; 
+}
+
+.hero-texto h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.destacado-naranja {
+    color: var(--color-naranja);
+}
+
+.hero-texto h3 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-bottom: 20px;
+    color: var(--color-texto-claro);
+}
+
+.hero-texto p {
+    line-height: 1.6;
+    font-size: 1.1rem;
+    color: var(--color-texto-claro);
+}
+
+.hero-imagen img {
+    border-radius: 50%; 
+    background-color: #cbd5e1; 
+    object-fit: cover;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+}
+
