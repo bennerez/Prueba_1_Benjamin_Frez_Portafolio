@@ -202,3 +202,106 @@ blockquote {
     color: #1e293b;
     margin-right: 5px;
 }
+
+/* --- ESTILOS SECCIÓN HABILIDADES (COMMIT 3) --- */
+.seccion-habilidades {
+    background-color: #ffffff;
+    padding: 80px 10%;
+}
+
+/* Tabla de Tecnologías */
+.tabla-contenedor {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px; /* Bordes redondeados para la tabla */
+    border: 1px solid #e2e8f0;
+    margin-bottom: 40px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Requerido para quitar espacios entre celdas */
+}
+
+th, td {
+    padding: 18px 20px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+    background-color: #1e293b; /* Azul oscuro como en la foto */
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+td {
+    color: #334155;
+    font-size: 1rem;
+}
+
+tr:last-child td {
+    border-bottom: none; /* Quita la línea de la última fila */
+}
+
+/* Barras de Progreso (Columna Dominio) */
+.barra-fondo {
+    width: 100%;
+    height: 10px;
+    background-color: #e2e8f0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.barra-progreso {
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* Tabla de Tecnologías */
+.tabla-contenedor {
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 12px; 
+    border: 1px solid #e2e8f0; /* Dejamos solo este borde */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); 
+    overflow: hidden; 
+    margin-bottom: 40px;
+}
+
+/* Contenedor PADRE que pone las tarjetas lado a lado */
+.listas-contenedor {
+    display: flex;
+    gap: 30px; /* Espacio entre las tarjetas */
+    width: 100%;
+}
+
+/* Tarjetas individuales con la sombra */
+.tarjeta-lista {
+    flex: 1; /* Obliga a que midan 50% y 50% */
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); 
+    border: none; 
+}
+
+.tarjeta-lista h3 {
+    color: #1e293b;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Estilos de los ítems de las listas */
+.tarjeta-lista ul, .tarjeta-lista ol {
+    padding-left: 20px;
+    color: #475569;
+    line-height: 1.8;
+}
+
+.tarjeta-lista li {
+    margin-bottom: 0.5px;
+}
