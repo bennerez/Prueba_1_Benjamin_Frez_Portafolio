@@ -382,3 +382,113 @@ figcaption p {
     color: #0369a1;
     text-decoration: underline;
 }
+
+.seccion-contacto {
+    background-color: #ffffff;
+    padding: 80px 10%;
+}
+
+.contenedor-contacto {
+    display: flex;
+    gap: 50px;
+    margin-top: 40px;
+    align-items: flex-start;
+}
+
+.formulario {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.fila-inputs {
+    display: flex;
+    gap: 20px;
+}
+
+.grupo-input {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+}
+
+label {
+    font-size: 0.95rem;
+    font-weight: bold;
+    color: #1e293b;
+}
+
+input, select, textarea {
+    padding: 12px 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #334155;
+    background-color: #f8fafc;
+    font-family: inherit;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: var(--color-naranja); 
+    box-shadow: 0 0 5px rgba(245, 158, 11, 0.3); 
+}
+
+.btn-enviar {
+    background-color: #702222; 
+    color: #ffffff;
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.btn-enviar:hover {
+    background-color: var(--color-naranja);
+}
+
+.tarjeta-info-contacto {
+    flex: 1;
+    background-color: #702222; 
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.tarjeta-info-contacto h3 {
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-size: 1.3rem;
+}
+
+.item-contacto span {
+    color: #f8fafc;
+    font-size: 1.05rem;
+}
+
+.icono-contacto {
+    background-color: var(--color-naranja);
+    color: #ffffff; 
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    font-size: 1.2rem;
+}
+
+.item-contacto {
+    display: flex; 
+    align-items: center; 
+    gap: 15px; 
+    margin-bottom: 15px;
+}
+

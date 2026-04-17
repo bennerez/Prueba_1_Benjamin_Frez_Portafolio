@@ -181,7 +181,7 @@
             </div>
         
             <div class="grid-proyectos">
-                
+
                 <article class="tarjeta-proyecto">
                     <figure>
                         <div class="img-proyecto bg-gradiente-1">
@@ -265,6 +265,72 @@
                         </figcaption>
                     </figure>
                 </article>
+            
+            </div>
+        </section>
+
+        <section id="contacto" class="seccion-contacto">
+            <div class="cabecera-seccion">
+                <h2>Contacto</h2>
+                <div class="linea-naranja"></div>
+                <p class="subtitulo">Envíame un mensaje</p>
+            </div>
+        
+            <div class="contenedor-contacto">
+                
+                <form action="#" class="formulario">
+                    <div class="fila-inputs">
+                        <div class="grupo-input">
+                            <label for="nombre">Nombre completo</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="grupo-input">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                        </div>
+                    </div>
+                
+                    <div class="grupo-input">
+                        <label for="asunto">Asunto</label>
+                        <select id="asunto" name="asunto" required>
+                            <option value="" disabled selected>Selecciona un asunto</option>
+                            <option value="laboral">Oportunidad laboral</option>
+                            <option value="freelance">Proyecto freelance</option>
+                            <option value="academica">Consulta académica</option>
+                        </select>
+                    </div>
+                
+                    <div class="grupo-input">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                    </div>
+                
+                    <button type="submit" class="btn-enviar">Enviar mensaje</button>
+                </form>
+            
+                <aside class="tarjeta-info-contacto">
+                    <h3>Información de contacto</h3>
+                    
+                    <div class="item-contacto">
+                        <div class="icono-contacto">✉️</div>
+                        <span>benjamin.frez02@inacapmail.cl</span>
+                    </div>
+                    
+                    <div class="item-contacto">
+                        <div class="icono-contacto">📍</div>
+                        <span>Concepción, Chile</span>
+                    </div>
+                    
+                    <div class="item-contacto">
+                        <div class="icono-contacto">📱</div>
+                        <span>+56 9 1234 5678</span>
+                    </div>
+                    
+                    <div class="item-contacto">
+                        <div class="icono-contacto">🌐</div>
+                        <span>github.com/benjaminfrez</span>
+                    </div>
+                </aside>
             
             </div>
         </section>
