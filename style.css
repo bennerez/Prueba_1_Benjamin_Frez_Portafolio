@@ -1,4 +1,8 @@
-/* COMMIT 1 */
+/* ==========================================================================
+   COMMIT 1: ESTRUCTURA BASE, VARIABLES, NAVBAR Y SECCIÓN INICIO
+   ========================================================================== */
+
+/* --- Variables Globales --- */
 :root {
     --color-fondo-azul: #772121; 
     --color-naranja: #ffa200;    
@@ -6,6 +10,7 @@
     --color-texto-claro: #e2e8f0;
 }
 
+/* --- Reseteo Base --- */
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
@@ -16,12 +21,14 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* --- Estructura Principal --- */
 .fondo-azul {
     background-color: var(--color-fondo-azul);
     color: var(--color-blanco);
     padding-bottom: 60px; 
 }
 
+/* --- Header y Navegación (Flexbox) --- */
 .header {
     display: flex; 
     justify-content: space-between; 
@@ -49,11 +56,11 @@ body {
 }
 
 .navbar ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px; 
-        list-style: none;
-        display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
+    list-style: none;
+    display: flex;
 }
 
 .navbar a {
@@ -61,7 +68,6 @@ body {
     text-decoration: none; 
     font-size: 1rem;
     transition: all 0.3s ease; 
-    
     border: 1px solid var(--color-naranja); 
     padding: 8px 16px; 
     border-radius: 20px; 
@@ -72,6 +78,7 @@ body {
     color: var(--color-blanco);
 }
 
+/* --- Sección Inicio (Hero) --- */
 .hero {
     display: flex;
     justify-content: space-between;
@@ -112,7 +119,10 @@ body {
     border: 5px solid rgba(255, 255, 255, 0.2);
 }
 
-/* COMMIT 2 */
+/* ==========================================================================
+   COMMIT 2: SECCIÓN SOBRE MÍ Y DATOS PERSONALES
+   ========================================================================== */
+
 .seccion-sobre-mi {
     background-color: #f8fafc;
     padding: 80px 10%;
@@ -205,17 +215,23 @@ blockquote {
     margin-right: 5px;
 }
 
-/* --- ESTILOS SECCIÓN HABILIDADES (COMMIT 3) --- */
+/* ==========================================================================
+   COMMIT 3: TABLA DE HABILIDADES Y LISTAS (UL/OL)
+   ========================================================================== */
+
 .seccion-habilidades {
     background-color: #ffffff;
     padding: 80px 10%;
 }
 
+/* --- Tabla de Tecnologías --- */
 .tabla-contenedor {
     width: 100%;
-    overflow: hidden;
-    border-radius: 8px; 
-    border: 1px solid #e2e8f0;
+    background-color: #ffffff;
+    border-radius: 12px; 
+    border: 1px solid #e2e8f0; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); 
+    overflow: hidden; 
     margin-bottom: 40px;
 }
 
@@ -246,6 +262,7 @@ tr:last-child td {
     border-bottom: none;
 }
 
+/* --- Barras de Progreso de la Tabla --- */
 .barra-fondo {
     width: 100%;
     height: 10px;
@@ -259,16 +276,7 @@ tr:last-child td {
     border-radius: 10px;
 }
 
-.tabla-contenedor {
-    width: 100%;
-    background-color: #ffffff;
-    border-radius: 12px; 
-    border: 1px solid #e2e8f0; 
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); 
-    overflow: hidden; 
-    margin-bottom: 40px;
-}
-
+/* --- Listas de Competencias y Rutas --- */
 .listas-contenedor {
     display: flex;
     gap: 30px; 
@@ -302,11 +310,16 @@ tr:last-child td {
     margin-bottom: 0.5px;
 }
 
+/* ==========================================================================
+   COMMIT 4: GRILLA DE PROYECTOS (CSS GRID)
+   ========================================================================== */
+
 .seccion-proyectos {
     background-color: #f8fafc;
     padding: 80px 10%;
 }
 
+/* --- Configuración CSS Grid --- */
 .grid-proyectos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -340,6 +353,7 @@ figure {
     font-size: 4rem;
 }
 
+/* --- Gradientes para Proyectos --- */
 .bg-gradiente-1 { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
 .bg-gradiente-2 { background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%); }
 .bg-gradiente-3 { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
@@ -386,6 +400,10 @@ figcaption p {
     text-decoration: underline;
 }
 
+/* ==========================================================================
+   COMMIT 5: FORMULARIO DE CONTACTO Y TARJETA DE INFORMACIÓN
+   ========================================================================== */
+
 .seccion-contacto {
     background-color: #ffffff;
     padding: 80px 10%;
@@ -398,6 +416,7 @@ figcaption p {
     align-items: flex-start;
 }
 
+/* --- Formulario --- */
 .formulario {
     flex: 2;
     display: flex;
@@ -457,6 +476,7 @@ input:focus, select:focus, textarea:focus {
     background-color: var(--color-naranja);
 }
 
+/* --- Tarjeta de Información Lateral --- */
 .tarjeta-info-contacto {
     flex: 1;
     background-color: #702222; 
@@ -506,6 +526,10 @@ input:focus, select:focus, textarea:focus {
     color: var(--color-naranja);
     text-decoration: underline;
 }
+
+/* ==========================================================================
+   COMMIT 6: PIE DE PÁGINA (FOOTER) Y REDES SOCIALES
+   ========================================================================== */
 
 .pie-pagina {
     background-color: #702222;
@@ -586,6 +610,11 @@ input:focus, select:focus, textarea:focus {
     color: var(--color-naranja);
 }
 
+/* ==========================================================================
+   COMMIT 7: DISEÑO RESPONSIVO (MEDIA QUERIES / BREAKPOINTS)
+   ========================================================================== */
+
+/* --- Breakpoint 1: Tablets (1024px) --- */
 @media (max-width: 1024px) {
     .contenedor-sobre-mi, .contenedor-contacto {
         gap: 30px;
@@ -596,7 +625,10 @@ input:focus, select:focus, textarea:focus {
     }
 }
 
+/* --- Breakpoint 2: Dispositivos Móviles (768px) --- */
 @media (max-width: 768px) {
+    
+    /* Adaptación Header */
     .header {
         flex-direction: column;
         padding: 20px;
@@ -606,13 +638,14 @@ input:focus, select:focus, textarea:focus {
     .navbar ul {
         flex-wrap: wrap;
         justify-content: center;
-        gap: 15px; /* CORREGIDO: antes decía gap: px; */
+        gap: 15px; 
     }
 
     .navbar a {
         display: inline-block; 
     }
 
+    /* Adaptación Hero */
     .hero {
         flex-direction: column;
         text-align: center;
@@ -629,6 +662,7 @@ input:focus, select:focus, textarea:focus {
         line-height: 1.3; 
     }
 
+    /* Adaptación Secciones Principales */
     .contenedor-sobre-mi {
         flex-direction: column; 
         gap: 30px;
@@ -638,6 +672,7 @@ input:focus, select:focus, textarea:focus {
         width: 100%;
     }
 
+    /* Scroll Horizontal para Tabla en Móviles */
     .tabla-contenedor {
         overflow-x: auto; 
         display: block;
@@ -647,11 +682,13 @@ input:focus, select:focus, textarea:focus {
         flex-direction: column;
     }
 
+    /* Grid a una sola columna */
     .grid-proyectos {
         grid-template-columns: 1fr; 
         gap: 30px; 
     }
 
+    /* Formulario y Footer en columna */
     .contenedor-contacto,
     .fila-inputs {
         flex-direction: column;
